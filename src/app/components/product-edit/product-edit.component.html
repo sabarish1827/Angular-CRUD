@@ -1,0 +1,33 @@
+
+<div class="container">
+    <h2>Edit Product</h2>
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Product Name</label>
+        <input id="name" formControlName="name" class="form-control" type="text" />
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Price (USD)</label>
+        <input id="price" formControlName="price" class="form-control" type="number" />
+      </div>
+  
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" formControlName="description" class="form-control"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input id="category" formControlName="category" class="form-control" type="text" />
+      </div>
+  
+      <div class="form-group">
+        <label for="stock">Stock Level</label>
+        <input id="stock" formControlName="stock" class="form-control" type="number" />
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+  </div>
+  

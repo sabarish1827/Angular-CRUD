@@ -1,0 +1,19 @@
+<h2>Add Product</h2>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <input matInput placeholder="Product Name" formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Price" formControlName="price">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Category" formControlName="category">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Description" formControlName="description"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Stock" formControlName="stock">
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit">Save</button>
+</form>
